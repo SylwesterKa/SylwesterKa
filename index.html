@@ -1,363 +1,572 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <!--
-    Modified from the Debian original for Ubuntu
-    Last updated: 2022-03-22
-    See: https://launchpad.net/bugs/1966004
-  -->
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Apache2 Ubuntu Default Page: It works</title>
-    <style type="text/css" media="screen">
-  * {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-  }
-
-  body, html {
-    padding: 3px 3px 3px 3px;
-
-    background-color: #D8DBE2;
-
-    font-family: Ubuntu, Verdana, sans-serif;
-    font-size: 11pt;
-    text-align: center;
-  }
-
-  div.main_page {
-    position: relative;
-    display: table;
-
-    width: 800px;
-
-    margin-bottom: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 0px 0px 0px;
-
-    border-width: 2px;
-    border-color: #212738;
-    border-style: solid;
-
-    background-color: #FFFFFF;
-
-    text-align: center;
-  }
-
-  div.page_header {
-    height: 180px;
-    width: 100%;
-
-    background-color: #F5F6F7;
-  }
-
-  div.page_header span {
-    margin: 15px 0px 0px 50px;
-
-    font-size: 180%;
-    font-weight: bold;
-  }
-
-  div.page_header img {
-    margin: 3px 0px 0px 40px;
-
-    border: 0px 0px 0px;
-  }
-
-  div.banner {
-    padding: 9px 6px 9px 6px;
-    background-color: #E9510E;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 112%;
-    text-align: center;
-    position: absolute;
-    left: 40%;
-    bottom: 30px;
-    width: 20%;
-  }
-
-  div.table_of_contents {
-    clear: left;
-
-    min-width: 200px;
-
-    margin: 3px 3px 3px 3px;
-
-    background-color: #FFFFFF;
-
-    text-align: left;
-  }
-
-  div.table_of_contents_item {
-    clear: left;
-
-    width: 100%;
-
-    margin: 4px 0px 0px 0px;
-
-    background-color: #FFFFFF;
-
-    color: #000000;
-    text-align: left;
-  }
-
-  div.table_of_contents_item a {
-    margin: 6px 0px 0px 6px;
-  }
-
-  div.content_section {
-    margin: 3px 3px 3px 3px;
-
-    background-color: #FFFFFF;
-
-    text-align: left;
-  }
-
-  div.content_section_text {
-    padding: 4px 8px 4px 8px;
-
-    color: #000000;
-    font-size: 100%;
-  }
-
-  div.content_section_text pre {
-    margin: 8px 0px 8px 0px;
-    padding: 8px 8px 8px 8px;
-
-    border-width: 1px;
-    border-style: dotted;
-    border-color: #000000;
-
-    background-color: #F5F6F7;
-
-    font-style: italic;
-  }
-
-  div.content_section_text p {
-    margin-bottom: 6px;
-  }
-
-  div.content_section_text ul, div.content_section_text li {
-    padding: 4px 8px 4px 16px;
-  }
-
-  div.section_header {
-    padding: 3px 6px 3px 6px;
-
-    background-color: #8E9CB2;
-
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 112%;
-    text-align: center;
-  }
-
-  div.section_header_grey {
-    background-color: #9F9386;
-  }
-
-  .floating_element {
-    position: relative;
-    float: left;
-  }
-
-  div.table_of_contents_item a,
-  div.content_section_text a {
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  div.table_of_contents_item a:link,
-  div.table_of_contents_item a:visited,
-  div.table_of_contents_item a:active {
-    color: #000000;
-  }
-
-  div.table_of_contents_item a:hover {
-    background-color: #000000;
-
-    color: #FFFFFF;
-  }
-
-  div.content_section_text a:link,
-  div.content_section_text a:visited,
-   div.content_section_text a:active {
-    background-color: #DCDFE6;
-
-    color: #000000;
-  }
-
-  div.content_section_text a:hover {
-    background-color: #000000;
-
-    color: #DCDFE6;
-  }
-
-  div.validator {
-  }
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!-- ... (dotyczy kodu head) -->
+</head>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeWave - Innowacyjna Technologia Fototerapii i Fotobiomodulacji</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #0072C6 0%, #00B0FF 100%);
+            color: white;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 3px;
+            background-color: #0072C6;
+            bottom: -10px;
+            left: 0;
+        }
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .benefit-card {
+            border-left: 4px solid #0072C6;
+        }
+        .testimonial-card {
+            background-color: #f8f9fa;
+            position: relative;
+        }
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 3rem;
+            color: #0072C6;
+            opacity: 0.2;
+        }
+        .timeline-dot {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #0072C6;
+            border-radius: 50%;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     </style>
-  </head>
-  <body>
-    <div class="main_page">
-      <div class="page_header floating_element">
-        <img src="icons/ubuntu-logo.png" alt="Ubuntu Logo"
-             style="width:184px;height:146px;" class="floating_element" />
-        <div>
-          <span style="margin-top: 1.5em;" class="floating_element">
-            Apache2 Default Page
-          </span>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-bold text-blue-600">LifeWave</h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#o-firmie" class="text-gray-700 hover:text-blue-600">O Firmie</a></li>
+                    <li><a href="#technologia" class="text-gray-700 hover:text-blue-600">Technologia</a></li>
+                    <li><a href="#produkty" class="text-gray-700 hover:text-blue-600">Produkty</a></li>
+                    <li><a href="#badania" class="text-gray-700 hover:text-blue-600">Badania</a></li>
+                    <li><a href="#opinie" class="text-gray-700 hover:text-blue-600">Opinie</a></li>
+                    <li><a href="#kontakt" class="text-gray-700 hover:text-blue-600">Kontakt</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="banner">
-          <div id="about"></div>
-          It works!
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Innowacyjna Technologia Fototerapii</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Odkryj przełomową technologię fotobiomodulacji, która wykorzystuje naturalne procesy organizmu do poprawy zdrowia i samopoczucia.</p>
+            <div class="flex justify-center">
+                <a href="#technologia" class="bg-white text-blue-600 hover:bg-blue-100 py-3 px-8 rounded-full font-semibold shadow-lg transition duration-300">Dowiedz się więcej</a>
+            </div>
         </div>
+    </section>
 
-      </div>
-      <div class="content_section floating_element">
-        <div class="content_section_text">
-          <p>
-                This is the default welcome page used to test the correct 
-                operation of the Apache2 server after installation on Ubuntu systems.
-                It is based on the equivalent page on Debian, from which the Ubuntu Apache
-                packaging is derived.
-                If you can read this page, it means that the Apache HTTP server installed at
-                this site is working properly. You should <b>replace this file</b> (located at
-                <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
-          </p>
+    <!-- O Firmie Section -->
+  <!-- O Firmie Section -->
+<section id="o-firmie" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold section-title">O Firmie LifeWave</h2>
+            <div class="flex flex-col md:flex-row gap-10 items-center">
+                <div class="md:w-1/2">
+                    <img src="https://lifewave.com/Content/cms/public/assets/svg/homepage/header-logo-mobile.svg" 
 
-          <p>
-                If you are a normal user of this web site and don't know what this page is
-                about, this probably means that the site is currently unavailable due to
-                maintenance.
-                If the problem persists, please contact the site's administrator.
-          </p>
-
+alt="Logo LifeWave" class="w-full mb-4 rounded-lg shadow-md">
+                    <p class="mb-4">LifeWave to innowacyjna firma zajmująca się tworzeniem produktów wykorzystujących technologię fototerapii, założona przez Davida Schmidta. Od momentu powstania, firma koncentruje się na rozwijaniu nieinwazyjnych metod poprawy zdrowia i samopoczucia.</p>
+                    <p class="mb-4">Produkty LifeWave to przede wszystkim specjalne plastry (bioelektrody), które wykorzystują unikalną technologię fotobiomodulacji do wspierania naturalnych procesów organizmu, bez wprowadzania do niego jakichkolwiek substancji chemicznych.</p>
+                    <p>Misją firmy jest poprawa zdrowia i wydłużenie życia ludzi na całym świecie za pomocą innowacyjnej technologii fotobiomodulacji.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://cdn.sanity.io/images/abq8rp7f/production/c36bada09048b3183deaabb107fe6bf65ecded99-440x586.png?auto=format" 
+alt="David Schmidt" class="w-full mb-4 rounded-lg shadow-md">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4">David Schmidt - Wynalazca i Założyciel</h3>
+                        <p class="mb-3">David Schmidt jest wynalazcą technologii LifeWave oraz założycielem i prezesem firmy. Jego doświadczenie w biznesie i rozwoju produktów obejmuje ponad 30 lat.</p>
+                        <p class="mb-3">Wykształcenie Davida w połączeniu z jego niepohamowaną wyobraźnią stworzyło w nim nienasycone pragnienie zmieniania świata. W trakcie swojej kariery odegrał kluczową rolę w rozwoju technologii produkcji energii zarówno dla zastosowań wojskowych, jak i komercyjnych.</p>
+                        <p class="mb-3">Został zaproszony przez Marynarkę Wojenną USA do udziału w elitarnym zespole badawczym, którego zadaniem było opracowanie produktu pomagającego załogom mini-łodzi podwodnych zachować czujność bez stosowania leków lub środków stymulujących.</p>
+                        <p>Dzięki tym badaniom David opracował plaster, który zwiększałby energię w organizmie za pomocą fototerapii. Stałby się on pierwszym prototypem LifeWave: Energy Enhancer.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="section_header">
-          <div id="changes"></div>
-                Configuration Overview
-        </div>
-        <div class="content_section_text">
-          <p>
-                Ubuntu's Apache2 default configuration is different from the
-                upstream default configuration, and split into several files optimized for
-                interaction with Ubuntu tools. The configuration system is
-                <b>fully documented in
-                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
-                documentation. Documentation for the web server itself can be
-                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
-                package was installed on this server.
-          </p>
-          <p>
-                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
-          </p>
-          <pre>
-/etc/apache2/
-|-- apache2.conf
-|       `--  ports.conf
-|-- mods-enabled
-|       |-- *.load
-|       `-- *.conf
-|-- conf-enabled
-|       `-- *.conf
-|-- sites-enabled
-|       `-- *.conf
-          </pre>
-          <ul>
-                        <li>
-                           <tt>apache2.conf</tt> is the main configuration
-                           file. It puts the pieces together by including all remaining configuration
-                           files when starting up the web server.
-                        </li>
-
-                        <li>
-                           <tt>ports.conf</tt> is always included from the
-                           main configuration file. It is used to determine the listening ports for
-                           incoming connections, and this file can be customized anytime.
-                        </li>
-
-                        <li>
-                           Configuration files in the <tt>mods-enabled/</tt>,
-                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
-                           particular configuration snippets which manage modules, global configuration
-                           fragments, or virtual host configurations, respectively.
-                        </li>
-
-                        <li>
-                           They are activated by symlinking available
-                           configuration files from their respective
-                           *-available/ counterparts. These should be managed
-                           by using our helpers
-                           <tt>
-                                a2enmod,
-                                a2dismod,
-                           </tt>
-                           <tt>
-                                a2ensite,
-                                a2dissite,
-                            </tt>
-                                and
-                           <tt>
-                                a2enconf,
-                                a2disconf
-                           </tt>. See their respective man pages for detailed information.
-                        </li>
-
-                        <li>
-                           The binary is called apache2 and is managed using systemd, so to
-                           start/stop the service use <tt>systemctl start apache2</tt> and
-                           <tt>systemctl stop apache2</tt>, and use <tt>systemctl status apache2</tt>
-                           and <tt>journalctl -u apache2</tt> to check status.  <tt>system</tt>
-                           and <tt>apache2ctl</tt> can also be used for service management if
-                           desired.
-                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
-                           default configuration.
-                        </li>
-          </ul>
-        </div>
-
-        <div class="section_header">
-            <div id="docroot"></div>
-                Document Roots
-        </div>
-
-        <div class="content_section_text">
-            <p>
-                By default, Ubuntu does not allow access through the web browser to
-                <em>any</em> file outside of those located in <tt>/var/www</tt>,
-                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html" rel="nofollow">public_html</a>
-                directories (when enabled) and <tt>/usr/share</tt> (for web
-                applications). If your site is using a web document root
-                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
-                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
-            </p>
-            <p>
-                The default Ubuntu document root is <tt>/var/www/html</tt>. You
-                can make your own virtual hosts under /var/www.
-            </p>
-        </div>
-
-        <div class="section_header">
-          <div id="bugs"></div>
-                Reporting Problems
-        </div>
-        <div class="content_section_text">
-          <p>
-                Please use the <tt>ubuntu-bug</tt> tool to report bugs in the
-                Apache2 package with Ubuntu. However, check <a
-                href="https://bugs.launchpad.net/ubuntu/+source/apache2"
-                rel="nofollow">existing bug reports</a> before reporting a new bug.
-          </p>
-          <p>
-                Please report bugs specific to modules (such as PHP and others)
-                to their respective packages, not to the web server itself.
-          </p>
-        </div>
-
-      </div>
     </div>
-    <div class="validator">
+</section>
+
+
+    <!-- Technologia Section -->
+    <section id="technologia" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold section-title">Technologia Fotobiomodulacji</h2>
+                <div class="mb-10">
+                    <p class="mb-4">Fotobiomodulacja (PBM), wcześniej znana jako terapia laserowa małej mocy (LLLT), to forma terapii światłem, która wykorzystuje niejonizujące źródła światła, w tym światło czerwone i bliską podczerwień, do stymulowania komórek organizmu.</p>
+                    <p>Ta innowacyjna technologia ma szeroki zakres zastosowań terapeutycznych i wellness, od łagodzenia bólu po poprawę regeneracji komórkowej.</p>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-6">Jak działa technologia LifeWave?</h3>
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-3 text-blue-600">Zasada działania plastrów</h4>
+                        <p>Ludzkie ciało naturalnie emituje ciepło, w tym ciepło w spektrum podczerwieni. Plastry LifeWave są zaprojektowane, aby wychwytywać tę energię podczerwieni, gdy są umieszczone na ciele, co powoduje, że odbijają ją z powrotem, stymulując określone punkty na skórze.</p>
+                        <p class="mt-3">Każdy plaster LifeWave działa na zasadzie fototerapii - nieinwazyjnej technologii używającej światła do pozytywnego wpływania na organizm bez wprowadzania do niego jakichkolwiek substancji.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-3 text-blue-600">Efekty biologiczne</h4>
+                        <p>Fotobiomodulacja wpływa na mitochondria - elektrownie komórkowe odpowiedzialne za produkcję energii (ATP). Światło o określonej długości fali aktywuje łańcuch oddechowy, zwiększając produkcję ATP i stymulując procesy regeneracyjne.</p>
+                        <p class="mt-3">Technologia LifeWave wykorzystuje te naturalne mechanizmy do wspierania zdrowia i dobrego samopoczucia bez stosowania leków czy suplementów.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-6">Peptydy miedzi (GHK-Cu i AHK-Cu) w produktach LifeWave</h3>
+                <div class="bg-white p-6 rounded-lg shadow-md mb-10">
+                    <p class="mb-4">W centrum technologii plastrów X39 i X49 znajdują się peptydy miedzi - GHK-Cu i AHK-Cu. Są to naturalne związki, które łączą miedź z aminokwasami i odgrywają kluczową rolę w procesach regeneracyjnych organizmu.</p>
+
+
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div class="border-l-4 border-blue-500 pl-4">
+                            <h4 class="text-lg font-bold mb-2">GHK-Cu (plaster X39)</h4>
+
+ <img src="https://cdn.sanity.io/images/abq8rp7f/production/f3d35d34c0effd3a495a37388a4b3f2c41a2da66-550x440.jpg?auto=format" 
+
+
+
+
+                            <p>GHK-Cu to tripeptyd składający się z glicyny, histydyny i lizyny związany z miedzią. Ma właściwości przeciwstarzeniowe, regeneracyjne i przeciwzapalne. Badania wykazały, że może aktywować komórki macierzyste, przyspieszać gojenie ran i poprawiać elastyczność skóry.</p>
+                        </div>
+                        <div class="border-l-4 border-green-500 pl-4">
+                            <h4 class="text-lg font-bold mb-2">AHK-Cu (plaster X49)</h4>
+
+
+ <img src="https://cdn.sanity.io/images/abq8rp7f/production/cdc77b5a98c53f02c7141f2cf3676471981f4fdf-550x440.jpg?auto=format" 
+
+
+
+                            <p>AHK-Cu (Copper Tripeptide-3) to analog GHK-Cu. Badania sugerują, że może on zwiększać liczbę fibroblastów i pobudzać produkcję czynnika wzrostu śródbłonka naczyniowego (VEGF), co ułatwia tworzenie nowych naczyń krwionośnych i wspiera procesy regeneracyjne.</p>
+                        </div>
+                    </div>
+                    
+                    <p class="mt-6">Plastry LifeWave X39 i X49 są zaprojektowane, aby przez fototerapię stymulować naturalne procesy organizmu związane z produkcją peptydów miedzi, bez wprowadzania jakichkolwiek substancji do organizmu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+   <!-- Produkty Section -->
+<section id="produkty" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold section-title">Produkty LifeWave</h2>
+            <p class="mb-10">LifeWave oferuje szereg innowacyjnych produktów opartych na technologii fotobiomodulacji, dostosowanych do różnych potrzeb zdrowotnych i wellness. Wszystkie produkty są nieinwazyjne i nie zawierają leków ani środków stymulujących.</p>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- X39 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://cdn.sanity.io/images/abq8rp7f/production/c8285added41b9538e20e09424647052dc63736c-7582x5302.png?auto=format" 
+alt="LifeWave X39" class="w-full h-auto object-cover mb-4 rounded-t-lg">
+                    <div class="bg-blue-600 text-white p-4">
+                        <h3 class="text-xl font-bold">LifeWave X39</h1>
+                    </div>
+                    <div class="p-6">
+                        <p class="mb-4">Flagowy produkt LifeWave, zaprojektowany, aby wspierać aktywację komórek macierzystych poprzez zwiększenie produkcji peptydu GHK-Cu w organizmie.</p>
+                        <h4 class="font-bold mb-2">Korzyści:</h4>
+                        <ul class="list-disc pl-5 mb-4">
+                            <li>Wspiera ogólne zdrowie i dobre samopoczucie</li>
+                            <li>Poprawia wyniki ćwiczeń</li>
+                            <li>Zwiększa siłę i wytrzymałość</li>
+                            <li>Przyspiesza regenerację</li>
+                            <li>Wspiera lepszy sen</li>
+                        </ul>
+                        <div class="text-gray-700 text-sm">
+                            <p>Cena: $99.95 USD (30 plastrów)</p>
+                            <p>Kod produktu: 39000.022.009</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- X49 -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+
+                    <img src="https://cdn.sanity.io/images/abq8rp7f/production/ac0cf9cb5f6e9bde249536bbeba4c843fbb55197-7582x5302.png?auto=format" 
+alt="LifeWave X49" class="w-full h-auto object-cover mb-4 rounded-t-lg">
+                    <div class="bg-green-600 text-white p-4">
+                        <h3 class="text-xl font-bold">LifeWave X49</h1>
+                    </div>
+                    <div class="p-6">
+                        <p class="mb-4">Następca X39, skoncentrowany na zwiększeniu produkcji peptydu AHK-Cu, wspierający wydajność, szybszą regenerację i relaksację.</p>
+                        <h4 class="font-bold mb-2">Korzyści:</h4>
+                        <ul class="list-disc pl-5 mb-4">
+                            <li>Promuje wydajność, siłę i wytrzymałość</li>
+                            <li>Wspiera zdrowy układ sercowo-naczyniowy</li>
+                            <li>Skraca czas regeneracji po ćwiczeniach</li>
+                            <li>Wspiera utrzymanie zdrowej wagi</li>
+                        </ul>
+                        <div class="text-gray-700 text-sm">
+                            <p>Cena: $99.95 USD (30 plastrów)</p>
+                            <p>Kod produktu: 49000.022.001</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Y-Age Aeon -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://cdn.sanity.io/images/abq8rp7f/production/f49096c3fa4c14267a9b6d597cff98d8d677a2af-7582x5302.png?auto=format" 
+
+alt="Y-Age Aeon" class="w-full h-auto object-cover mb-4 rounded-t-lg">
+                    <div class="bg-purple-600 text-white p-4">
+                        <h3 class="text-xl font-bold">Y-Age Aeon</h1>
+                    </div>
+                    <div class="p-6">
+                        <p class="mb-4">Plaster zaprojektowany, aby wspierać zarządzanie stresem i zmniejszać stan zapalny w organizmie.</p>
+                        <h4 class="font-bold mb-2">Korzyści:</h4>
+                        <ul class="list-disc pl-5 mb-4">
+                            <li>Pomaga w redukcji stresu</li>
+                            <li>Wspiera relaksację</li>
+                            <li>Zmniejsza stan zapalny</li>
+                            <li>Zwiększa energię</li>
+                            <li>Redukuje chemikalia oksydacyjne</li>
+                        </ul>
+                        <div class="text-gray-700 text-sm">
+                            <p>Cena: Dostępne w sklepie LifeWave</p>
+                            <p>Kod produktu: 36552.022.001</p>
+                        </div>
+                    </div>
+                </div>
+
+  <!-- Energy Enhancer-->
+
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://cdn.sanity.io/images/abq8rp7f/production/cfe9ab933ce45720a6e0eef6e983a3ab1070d5bf-7582x5302.png?auto=format" 
+
+alt="Energy Enhancer" class="w-full h-auto object-cover mb-4 rounded-t-lg">
+                    <div class="bg-red-600 text-white p-4">
+                        <h3 class="text-xl font-bold">Energy Enhancer</h1>
+                    </div>
+                    <div class="p-6">
+                        <p class="mb-4">Odnajdź równowagę pomiędzy aktywnością fizyczną a regeneracją zdrowotną. Plastry Energy Enhancer umożliwiają Ci znalezienie pożądanego przepływu energii i poczucie zdrowia i witalności w całym ciele..</p>
+                        <h4 class="font-bold mb-2">Korzyści:</h4>
+                        <ul class="list-disc pl-5 mb-4">
+                            <li>Dba o ogólne dobre samopoczucie (w połączeniu z prozdrowotnymi ćwiczeniami fizycznymi)</li>
+                            <li>Poprawia przepływ energii w ciele</li>
+                            <li>Wspiera organizm podczas ćwiczeń fizycznych.</li>
+                            <li>Zwiększa energię</li>
+                            <li>Bez substancji leczniczych i stymulujących</li>
+                        </ul>
+                        <div class="text-gray-700 text-sm">
+                            <p>Cena: Dostępne w sklepie LifeWave</p>
+                            <p>Kod produktu: 36552.022.001</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Y-Age Glutathione -->
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://cdn.sanity.io/images/abq8rp7f/production/7d99e965e07b744289d18b21ee514f67721a0001-7582x5306.png?auto=format" 
+
+alt="Y-Age Glutathione" class="w-full h-auto object-cover mb-4 rounded-t-lg">
+                    <div class="bg-yellow-600 text-white p-4">
+                        <h3 class="text-xl font-bold">Y-Age Glutathione</h1>
+                    </div>
+                    <div class="p-6">
+                        <p class="mb-4">Plaster wspierający naturalną produkcję glutationu w organizmie - jednego z najsilniejszych przeciwutleniaczy.</p>
+                        <h4 class="font-bold mb-2">Korzyści:</h4>
+                        <ul class="list-disc pl-5 mb-4">
+                            <li>Wspiera detoksykację organizmu</li>
+                            <li>Chroni komórki przed stresem oksydacyjnym</li>
+                            <li>Wspiera ogólne zdrowie i witalność</li>
+                            <li>Pomaga w celach związanych z fitness</li>
+                        </ul>
+                        <div class="text-gray-700 text-sm">
+                            <p>Cena: Dostępne w sklepie LifeWave</p>
+                            <p>Kod produktu: 36001.022.001</p>
+                        </div>
+                    </div>
+                </div>
+
+ <!-- Silent night-->
+
+                <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://cdn.sanity.io/images/abq8rp7f/production/737a4f54a50b10358e59092b95e15bbd33479ad3-7582x5302.png?auto=format" 
+
+alt="Silent night-" class="w-full h-auto object-cover mb-4 rounded-t-lg">
+                    <div class="bg-purple-600 text-white p-4">
+                        <h3 class="text-xl font-bold">Silent night</h1>
+                    </div>
+                    <div class="p-6">
+                        <p class="mb-4">Produkt Silent Nights delikatnie wspomaga odpoczynek i regeneracyjny sen. Opanuj sztukę głębokiego odprężenia i pozwól, aby każdy dzień przyniósł Ci mnóstwo nowych możliwości..</p>
+                        <h4 class="font-bold mb-2">Korzyści:</h4>
+                        <ul class="list-disc pl-5 mb-4">
+                            <li>Odprężenie to lepsza jakość snu</li>
+                            <li>Odprężenie może wydłużyć sen</li>
+                            <li>Zdrowy środek wspomagający sen.</li>
+                            <li>Zwiększa energię</li>
+                            <li>Bez substancji leczniczych i stymulujących</li>
+                        </ul>
+                        <div class="text-gray-700 text-sm">
+                            <p>Cena: Dostępne w sklepie LifeWave</p>
+                            <p>Kod produktu: 36552.022.001</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Inne produkty LifeWave</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="benefit-card bg-white p-4 rounded shadow">
+
+                        <img src="https://cdn.sanity.io/images/abq8rp7f/production/9bffbd9abab1b6741d7057e094515e02bbbde0c7-7582x5302.png?auto=format" 
+
+alt="Y-Age Carnosine" class="w-full h-auto object-cover mb-2">
+                        <h4 class="font-bold">Y-Age Carnosine</h4>
+                        <p>Zwiększ aktywność i witalność dzięki plastrom Y-Age Carnosine, które pomagają zwiększyć motywację do ćwiczeń i zadbać o zdrowie fizyczne w ramach ogólnej podróży wellness. Chodzi nie tylko o dotrzymanie kroku, ale również wyznaczanie nowych ścieżek.
+
+<h4 class="font-bold mb-2">Korzyści:</h4>
+                        <ul class="list-disc pl-5 mb-4">
+                            <li>Wspomaga ćwiczenia fizyczne i poprawia sprawność w ramach rutyny wellness</li>
+                            <li>Polepsza ogólne samopoczucie</li>
+                          
+                            
+                            <li>Bez substancji leczniczych i stymulujących</li>
+                        </ul>
+
+
+</p>
+
+                    </div>
+                    <div class="benefit-card bg-white p-4 rounded shadow">
+                        <img src="https://example.com/lifewave-cellergize.png" alt="Cellergize" class="w-full h-auto object-cover mb-2">
+                        <h4 class="font-bold">Cellergize</h4>
+                        <p>Zapowiadane na 2025 rok suplementy wspierające witalność komórek macierzystych.</p>
+                    </div>
+                    <div class="benefit-card bg-white p-4 rounded shadow">
+
+                        <img src="https://cdn.sanity.io/images/abq8rp7f/production/4d729f7daed632832ab3cf6805149e8c05b3e79e-7592x5302.png?auto=format" 
+
+alt="Alavida" class="w-full h-auto object-cover mb-2">
+                        <h4 class="font-bold">Alavida</h4>
+                        <p>Seria produktów do pielęgnacji skóry wykorzystujących technologię LifeWave.
+Alavida pielęgnuje ciało i równoważy jego naturalną energię regeneracyjną, aby zapewnić skórze zdrowy i pełen blasku wygląd.
+
+
+Aby osiągnąć najlepsze rezultaty, stosuj wraz z systemem regenerującym Alavida.
+</p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+</section>
+
+
+    <!-- Badania Section -->
+    <section id="badania" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold section-title">Badania Naukowe</h2>
+                <p class="mb-10">Technologia LifeWave została poddana licznym badaniom klinicznym i naukowym. Poniżej przedstawiamy wybrane badania dotyczące produktów LifeWave:</p>
+
+                <div class="space-y-6 mb-10">
+                    <div class="bg-white p-6 rounded-lg shadow-md relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold mb-2">Double-blind testing of the Lifewave X39 patch to determine GHK-Cu production levels</h3>
+                        <p class="text-gray-600 mb-2">Connor, C., Connor, M., Yue, D., Eickhoff, J. (2021)</p>
+                        <p>Badanie to pokazuje wpływ noszenia nieinwazyjnego plastra fotobiomodulacyjnego LifeWave X39 na poziomy peptydu GHK-Cu w organizmie. Wyniki sugerują, że plastry X39 znacząco zwiększają poziom GHK-Cu we krwi.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold mb-2">Phototherapy Induced Metabolism Change Produced by the LifeWave X39 Non-transdermal Patch</h3>
+                        <p class="text-gray-600 mb-2">Perry, M., MA, L.P. (2021)</p>
+                        <p>Badanie analizujące wpływ plastra X39 na metabolizm człowieka. Skupia się na stymulacji peptydu miedzi GHK-Cu i jego wpływie na procesy metaboliczne.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold mb-2">LifeWave X39 Pilot Demonstrates Light Triggered Changes</h3>
+                        <p class="text-gray-600 mb-2">Connor, M., Connor, C., Gombosuren, N. (2020)</p>
+                        <p>Badanie pilotażowe pokazujące, jak plastry LifeWave X39 wywołują zmiany w organizmie poprzez stymulację światłem. Badanie podkreśla, że plastry pomagają stymulować organizm, wykorzystując naturalne światło podczerwone emitowane przez ciało.</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md relative">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-xl font-bold mb-2">LifeWave X49TM Patch Supports Improved Results in Fitness, Strength and Stamina</h3>
+                        <p class="text-gray-600 mb-2">Connor, M.H., Connor, C.A., Dan, H., Dawei, Y. (2023)</p>
+                        <p>Badanie analizujące wpływ plastra X49 na poprawę wyników w zakresie sprawności fizycznej, siły i wytrzymałości. Plaster X49 wykorzystuje fototerapię do równoważenia organizmu i wspierania jego naturalnych funkcji.</p>
+                    </div>
+                </div>
+
+                <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4">Podsumowanie badań</h3>
+                    <p>Badania naukowe sugerują, że technologia LifeWave może mieć pozytywny wpływ na wiele aspektów zdrowia i wydajności organizmu. Istnieją jednak również głosy krytyczne wskazujące na potrzebę większej liczby niezależnych badań klinicznych.</p>
+                    <p class="mt-2">Zaleca się, aby każdy użytkownik przeprowadził własną analizę dostępnych badań i skonsultował się ze specjalistą ochrony zdrowia przed zastosowaniem produktów.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opinie Section -->
+    <section id="opinie" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold section-title">Opinie Użytkowników</h2>
+                <p class="mb-10">Poznaj doświadczenia osób, które korzystają z produktów LifeWave:</p>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-10">
+                    <div class="testimonial-card p-6 rounded-lg shadow-md">
+                        <p class="mb-4 pl-6">Mój sen, moja energia, mój wzrok, moja skóra, moje włosy, mój spokój, moja mgła mózgowa - wszystko jest teraz znacznie lepsze niż było. Absolutnie niesamowite.</p>
+                        <div class="flex items-center">
+                            <div class="bg-blue-500 h-10 w-10 rounded-full flex items-center justify-center text-white font-bold">A</div>
+                            <div class="ml-3">
+                                <p class="font-bold">Anna</p>
+                                <p class="text-sm text-gray-600">Użytkowniczka X39</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card p-6 rounded-lg shadow-md">
+                        <p class="mb-4 pl-6">Na początku wydawało się to zbyt proste, ale po 3 dniach noszenia X39, ból kolana mojego męża, który był chroniczny od miesięcy, zniknął.</p>
+                        <div class="flex items-center">
+                            <div class="bg-green-500 h-10 w-10 rounded-full flex items-center justify-center text-white font-bold">M</div>
+                            <div class="ml-3">
+                                <p class="font-bold">Magdalena</p>
+                                <p class="text-sm text-gray-600">Użytkowniczka X39</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card p-6 rounded-lg shadow-md">
+                        <p class="mb-4 pl-6">Używam tych plastrów od ponad roku i znacznie poprawiłem swoje zdrowie i samopoczucie. Wybieram naturalne środki i olejki eteryczne, a plastry LifeWave doskonale dopełniają moje podejście.</p>
+                        <div class="flex items-center">
+                            <div class="bg-purple-500 h-10 w-10 rounded-full flex items-center justify-center text-white font-bold">K</div>
+                            <div class="ml-3">
+                                <p class="font-bold">Krzysztof</p>
+                                <p class="text-sm text-gray-600">Użytkownik X39 i Aeon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card p-6 rounded-lg shadow-md">
+                        <p class="mb-4 pl-6">Kocham ten produkt z kilku powodów. Wyniki, które uzyskałem dzięki jego stosowaniu, są doskonałe. Uważam, że ten produkt faktycznie spełnia to, co obiecuje.</p>
+                        <div class="flex items-center">
+                            <div class="bg-yellow-500 h-10 w-10 rounded-full flex items-center justify-center text-white font-bold">T</div>
+                            <div class="ml-3">
+                                <p class="font-bold">Tomasz</p>
+                                <p class="text-sm text-gray-600">Użytkownik X49</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Opinie krytyczne</h3>
+                    <p>Dla pełnego obrazu warto zaznaczyć, że pojawiają się również głosy krytyczne wobec produktów LifeWave:</p>
+                    <ul class="list-disc pl-5 mt-3">
+                        <li>Niektórzy użytkownicy nie odczuwają żadnych efektów po zastosowaniu plastrów</li>
+                        <li>Część naukowców podkreśla potrzebę większej liczby niezależnych badań klinicznych</li>
+                        <li>Pojawiają się pytania o mechanizm działania i skuteczność nieinwazyjnej stymulacji produkcji peptydów</li>
+                    </ul>
+                    <p class="mt-3">Zaleca się indywidualne podejście i konsultację ze specjalistą przed podjęciem decyzji o stosowaniu produktów.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt" class="py-20 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Zainteresowany produktami LifeWave?</h2>
+                <p class="text-xl mb-8">Dowiedz się więcej o technologii fototerapii i produktach LifeWave odwiedzając oficjalną stronę producenta.</p>
+                <div>
+                    <a href="https://lifewave.com/sylwesterk" target="_blank" class="bg-white text-blue-600 hover:bg-blue-100 py-3 px-8 rounded-full font-semibold shadow-lg transition duration-300 inline-block">Odwiedź oficjalną stronę LifeWave</a>
+                </div>
+                <p class="mt-6 text-sm">Link referencyjny: https://lifewave.com/sylwesterk</p>
+
+
+    <img src="https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/438161054_8358843694131430_1833070040367682926_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=7JNkOWoVe94Q7kNvwEdHlVG&_nc_oc=AdnL6lYAW3v-LEj7zBu5xm69lHLfPI0jyIL8bDJSq1b-m59mDzlpeCBOkHMw_jB_HEY&_nc_zt=23&_nc_ht=scontent-waw2-1.xx&_nc_gid=hMKGGgBBdcOpNBuLAlO1Ig&oh=00_AfKrSKfXghcwsUjEHWhbcVH6VPqPW2hnvYa8VWVU-ylX_A&oe=682E0C29" 
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">LifeWave</h3>
+                        <p class="text-gray-400">Innowacyjna technologia fototerapii dla poprawy zdrowia i samopoczucia.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Ważne informacje</h3>
+                        <p class="text-gray-400">Plastry LifeWave są zaprojektowane do celów związanych z wellness. Nie są przeznaczone do diagnozowania, leczenia, łagodzenia lub zapobiegania jakiejkolwiek chorobie.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Kontakt</h3>
+                        <p class="text-gray-400">Aby uzyskać więcej informacji, odwiedź oficjalną stronę LifeWave korzystając z podanego linku referencyjnego.</p>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                    <p>&copy; 2025 Informacje o technologii LifeWave. Niniejsza strona nie jest oficjalną stroną LifeWave. Wszystkie znaki towarowe należą do ich właścicieli.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<body class="bg-gray-50">
+    <!-- ... (dotyczy sekcji header) -->
+
+  
+</body>
 </html>
